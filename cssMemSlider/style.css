@@ -9,5 +9,65 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: auto;
+    width: 70%;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.content--image {
+    height: 100%;
+}
+
+.slide-item {
+    z-index: 1;
+}
+
+.content--title {
+    width: 75%;
+}
+
+.content--slider {
+    width: 25%;
+}
+
+.dots-item {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50%;
+    margin-right: 12px;
+    background: #1f6feb;
+}
+
+.dots-item:hover {
+    cursor: pointer;
+    background: #8b949e;
+}
+
+.dots-item:last-child {
+    margin: 0;
+}
+
+.active {
+    background: #000000;
+    border: 5px solid #1f6feb;
 }
